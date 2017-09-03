@@ -10,8 +10,7 @@
   {:public
    {:com/myblackdoor [:blackdoor/member
                       :blackdoor/guest]
-    :blackdoor/guest [:patreon/blackdoor
-                      :typeform/subscribe]
+    :blackdoor/guest [:typeform/subscribe]
     :blackdoor/member [:slack/signin
                        :loomio/signin]
     :loomio/signin [:loomio.subgroups/blackdoor]
@@ -20,7 +19,8 @@
     :instagram/myblackdoor [:com/myblackdoor]}
    :subscribe
    {:typeform/subscribe [:emails/subscribed
-                         :mailcimp/blackdoor]
+                         :mailcimp/blackdoor
+                         :patreon/blackdoor]
     :emails/subscribed [:patreon/blackdoor]}
    :invite
    {:typeform/invite [:emails/invite]
